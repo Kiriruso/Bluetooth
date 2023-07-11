@@ -8,16 +8,52 @@ namespace Bluetooth.LowEnergy.Console.Receive
     {
         public static void Main(string[] args)
         {
-            var watcher = new BluetoothLowEnergyDeviceWatcher(deviceName: "Mi Smart Band 6");
+            int heartbeatTimeout = 30;
+            short signalStrength = -70;
+            BluetoothLowEnergyDeviceWatcher watcher;
+            
+            System.Console.Write("Enter the device timeout time (seconds): ");
+            while (!int.TryParse(System.Console.ReadLine(), out heartbeatTimeout) & heartbeatTimeout > 0)
+            {
+                System.Console.WriteLine("Incorrect time");
+                System.Console.Write("Enter the device timeout time: ");
+            }
+            
+            System.Console.Write("Enter the strength of the signal [example -50 dB]: ");
+            while (!short.TryParse(System.Console.ReadLine(), out signalStrength) & signalStrength < 0)
+            {
+                System.Console.WriteLine("Signal must be less than 0");
+                System.Console.WriteLine("Enter the strength of the signal (dB): ");
+            }
 
+            System.Console.Write("Do you want to search for devices by their name? y/n: ");
+            var choice = char.ToUpper(System.Console.ReadKey().KeyChar);
+            System.Console.WriteLine();
+            if (choice == 'Y')
+            {
+                System.Console.Write("Enter device name: ");
+                var deviceName = System.Console.ReadLine();
+                watcher = new BluetoothLowEnergyDeviceWatcher(deviceName: deviceName);
+            }
+            else
+            {
+                System.Console.Write("Looking for paired devices? y/n: ");
+                choice = char.ToUpper(System.Console.ReadKey().KeyChar);
+                System.Console.WriteLine();
+                watcher = new BluetoothLowEnergyDeviceWatcher(pairingState: choice == 'Y');
+            }
+
+            watcher.HeartbeatTimeout = heartbeatTimeout;
+            watcher.SignalStrengthFilter = signalStrength;
+            
             watcher.StartedListening += () =>
             {
-                System.Console.WriteLine("Listening...");
+                System.Console.WriteLine("Listening... Please wait");
             };
 
             watcher.StoppedListening += () =>
             {
-                System.Console.WriteLine("Stopped");
+                System.Console.WriteLine("Listening stopped");
             };
             
             watcher.EnumerationCompleted += async () =>
@@ -35,6 +71,11 @@ namespace Bluetooth.LowEnergy.Console.Receive
                     
                         var services = await BluetoothLowEnergyDevice.GetGattServicesAsync(device);
                         System.Console.ForegroundColor = ConsoleColor.Yellow;
+                        if (services.Count == 0)
+                        {
+                            System.Console.WriteLine("SERVICES NOT FOUND");
+                            continue;
+                        }
                         System.Console.WriteLine("DEVICE SERVICES: ");
                         foreach (var service in services)
                         {
@@ -48,6 +89,12 @@ namespace Bluetooth.LowEnergy.Console.Receive
             
                             int i = 1;
                             System.Console.ForegroundColor = ConsoleColor.Yellow;
+                            if (characteristics.Count == 0)
+                            {
+                                System.Console.WriteLine("SERVICE CHARACTERISTICS NOT FOUND");
+                                System.Console.WriteLine();
+                                continue;
+                            }
                             System.Console.WriteLine("SERVICE CHARACTERISTICS:");
                             foreach (var characteristic in characteristics)
                             {
@@ -97,9 +144,6 @@ namespace Bluetooth.LowEnergy.Console.Receive
                 System.Console.WriteLine("Press enter to stop listening");
             };
 
-            System.Console.WriteLine("Press enter to start listening");
-            System.Console.ReadKey();
-            
             watcher.StartListening();
 
             while (watcher.Listening) { } // Waiting for an event [EnumerationCompleted]

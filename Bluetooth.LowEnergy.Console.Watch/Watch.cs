@@ -7,20 +7,37 @@ namespace Bluetooth.LowEnergy.Console.Watch
     {
         public static void Main(string[] args)
         {
+            int heartbeatTimeout = 30;
+            short signalStrength = -70;
+
+            System.Console.Write("Enter the device timeout time (seconds): ");
+            while (!int.TryParse(System.Console.ReadLine(), out heartbeatTimeout) & heartbeatTimeout > 0)
+            {
+                System.Console.WriteLine("Incorrect time");
+                System.Console.Write("Enter the device timeout time: ");
+            }
+            
+            System.Console.Write("Enter the strength of the signal [example -50 dB]: ");
+            while (!short.TryParse(System.Console.ReadLine(), out signalStrength) & signalStrength < 0)
+            {
+                System.Console.WriteLine("Signal must be less than 0");
+                System.Console.WriteLine("Enter the strength of the signal (dB): ");
+            }
+
             var watcher = new BluetoothLowEnergyDeviceWatcher(pairingState: false)
             {
-                HeartbeatTimeout = 15,     // Default value  30 [in seconds]
-                SignalStrengthFilter = -70 // Default value -70 [in dB]
+                HeartbeatTimeout = heartbeatTimeout,  // Default value  30 [in seconds]
+                SignalStrengthFilter = signalStrength // Default value -70 [in dB]
             };
 
             watcher.StartedListening += () =>
             {
-                System.Console.WriteLine("Listening...");
+                System.Console.WriteLine("Listening... Please wait");
             };
 
             watcher.StoppedListening += () =>
             {
-                System.Console.WriteLine("Stopped");
+                System.Console.WriteLine("Listening stopped");
             };
             
             watcher.NewDeviceDiscovered += device =>
@@ -49,22 +66,24 @@ namespace Bluetooth.LowEnergy.Console.Watch
             
             watcher.EnumerationCompleted += () =>
             {
-                System.Console.WriteLine("Press enter to stop listening");
+                System.Console.WriteLine($"Enumeration completed: {watcher.DiscoveredDevices.Count}");
                 Thread.Sleep(5000);
             };
-
-            System.Console.WriteLine("Press enter to start listening");
-            System.Console.ReadKey();
 
             watcher.StartListening();
             
             while (watcher.Listening) { } // Waiting for an event [EnumerationCompleted]
-            
-            System.Console.ReadKey();
 
-            System.Console.WriteLine("Discovered devices:");
-            foreach (var device in watcher.DiscoveredDevices)
-                System.Console.WriteLine(device + Environment.NewLine);
+            if (watcher.DevicesFound)
+            {
+                System.Console.WriteLine("Discovered devices:");
+                foreach (var device in watcher.DiscoveredDevices)
+                    System.Console.WriteLine(device + Environment.NewLine);
+            }
+            else
+            {
+                System.Console.WriteLine("Devices not found");
+            }
 
             watcher.StopListening();
             

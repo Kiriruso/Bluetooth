@@ -15,7 +15,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a78d5f4c-3839-490b-842f-157dadff6e70" name="Changes" comment="Lib for MPEI" />
+    <list default="true" id="a78d5f4c-3839-490b-842f-157dadff6e70" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SimpleBluetoothLibrary/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SimpleBluetoothLibrary/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,6 +47,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/metadata/14fbe8b900a740a385d0a7c2c19632566a4400/8f/68985924/IDeviceWatcher2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/metadata/ad677a10e41e433782f2d973daa57f676d5e00/11/dafd825e/DeviceWatcher.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Bluetooth.LowEnergy/BluetoothLowEnergyDeviceWatcher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Bluetooth.LowEnergy/obj/Release/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -132,7 +135,7 @@
       <workItem from="1688836253865" duration="23993000" />
       <workItem from="1688900067804" duration="14623000" />
       <workItem from="1688923091616" duration="25074000" />
-      <workItem from="1689000995970" duration="44079000" />
+      <workItem from="1689000995970" duration="46919000" />
     </task>
     <task id="LOCAL-00001" summary="Lib for MPEI">
       <created>1689056098575</created>
@@ -141,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689056098575</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Release Lib">
+      <created>1689056220134</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1689056220134</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,7 +173,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Lib for MPEI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lib for MPEI" />
+    <MESSAGE value="Release Lib" />
+    <option name="LAST_COMMIT_MESSAGE" value="Release Lib" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
