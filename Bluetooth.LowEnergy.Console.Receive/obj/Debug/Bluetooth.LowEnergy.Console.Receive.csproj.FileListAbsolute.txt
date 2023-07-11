@@ -1,0 +1,11 @@
+D:\Projects\SimpleBluetoothLibrary\Bluetooth.LowEnergy.Console.Receive\bin\Debug\Bluetooth.LowEnergy.Console.Receive.exe
+D:\Projects\SimpleBluetoothLibrary\Bluetooth.LowEnergy.Console.Receive\bin\Debug\Bluetooth.LowEnergy.Console.Receive.pdb
+D:\Projects\SimpleBluetoothLibrary\Bluetooth.LowEnergy.Console.Receive\bin\Debug\Bluetooth.LowEnergy.dll
+D:\Projects\SimpleBluetoothLibrary\Bluetooth.LowEnergy.Console.Receive\bin\Debug\Windows.winmd
+D:\Projects\SimpleBluetoothLibrary\Bluetooth.LowEnergy.Console.Receive\bin\Debug\Bluetooth.LowEnergy.pdb
+D:\Projects\SimpleBluetoothLibrary\Bluetooth.LowEnergy.Console.Receive\obj\Debug\Bluetooth.LowEnergy.Console.Receive.csproj.AssemblyReference.cache
+D:\Projects\SimpleBluetoothLibrary\Bluetooth.LowEnergy.Console.Receive\obj\Debug\Bluetooth.LowEnergy.Console.Receive.csproj.SuggestedBindingRedirects.cache
+D:\Projects\SimpleBluetoothLibrary\Bluetooth.LowEnergy.Console.Receive\obj\Debug\Bluetooth.LowEnergy.Console.Receive.csproj.CoreCompileInputs.cache
+D:\Projects\SimpleBluetoothLibrary\Bluetooth.LowEnergy.Console.Receive\obj\Debug\Bluetooth.LowEnergy.Console.Receive.csproj.CopyComplete
+D:\Projects\SimpleBluetoothLibrary\Bluetooth.LowEnergy.Console.Receive\obj\Debug\Bluetooth.LowEnergy.Console.Receive.exe
+D:\Projects\SimpleBluetoothLibrary\Bluetooth.LowEnergy.Console.Receive\obj\Debug\Bluetooth.LowEnergy.Console.Receive.pdb

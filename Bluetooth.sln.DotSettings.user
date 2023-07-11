@@ -1,0 +1,10 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CProgram_0020Files_0020_0028x86_0029_005CReference_0020Assemblies_005CMicrosoft_005CFramework_005C_002ENETCore_005Cv4_002E5_005CSystem_002ERuntime_002EWindowsRuntime_002Exml/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CProgram_0020Files_0020_0028x86_0029_005CReference_0020Assemblies_005CMicrosoft_005CFramework_005C_002ENETCore_005Cv4_002E5_005CSystem_002ERuntime_002Exml/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CProgram_0020Files_0020_0028x86_0029_005CReference_0020Assemblies_005CMicrosoft_005CFramework_005C_002ENETFramework_005Cv4_002E7_002E2_005CFacades_005CSystem_002ERuntime_002EInteropServices_002EWindowsRuntime_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CProgram_0020Files_0020_0028x86_0029_005CWindows_0020Kits_005C10_005CUnionMetadata_005C10_002E0_002E19041_002E0_005CWindows_002Ewinmd/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CProgram_0020Files_0020_0028x86_0029_005CWindows_0020Kits_005C10_005CUnionMetadata_005CFacade_005CWindows_002EWinMD/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=D_003A_005CProjects_005CSimpleBluetoothLibrary_005CBluetooth_002ELowEnergy_005Cbin_005CDebug_005CWindows_002Ewinmd/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
+  &lt;Assembly Path="C:\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.22000.0\Windows.winmd" /&gt;&#xD;
+&lt;/AssemblyExplorer&gt;</s:String></wpf:ResourceDictionary>

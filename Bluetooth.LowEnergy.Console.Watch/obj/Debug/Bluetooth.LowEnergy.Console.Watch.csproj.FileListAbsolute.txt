@@ -1,0 +1,11 @@
+D:\Projects\SimpleBluetoothLibrary\Bluetooth.LowEnergy.Console.Watch\bin\Debug\Bluetooth.LowEnergy.Console.Watch.exe
+D:\Projects\SimpleBluetoothLibrary\Bluetooth.LowEnergy.Console.Watch\bin\Debug\Bluetooth.LowEnergy.Console.Watch.pdb
+D:\Projects\SimpleBluetoothLibrary\Bluetooth.LowEnergy.Console.Watch\bin\Debug\Bluetooth.LowEnergy.dll
+D:\Projects\SimpleBluetoothLibrary\Bluetooth.LowEnergy.Console.Watch\bin\Debug\Windows.winmd
+D:\Projects\SimpleBluetoothLibrary\Bluetooth.LowEnergy.Console.Watch\bin\Debug\Bluetooth.LowEnergy.pdb
+D:\Projects\SimpleBluetoothLibrary\Bluetooth.LowEnergy.Console.Watch\obj\Debug\Bluetooth.LowEnergy.Console.Watch.csproj.AssemblyReference.cache
+D:\Projects\SimpleBluetoothLibrary\Bluetooth.LowEnergy.Console.Watch\obj\Debug\Bluetooth.LowEnergy.Console.Watch.csproj.SuggestedBindingRedirects.cache
+D:\Projects\SimpleBluetoothLibrary\Bluetooth.LowEnergy.Console.Watch\obj\Debug\Bluetooth.LowEnergy.Console.Watch.csproj.CoreCompileInputs.cache
+D:\Projects\SimpleBluetoothLibrary\Bluetooth.LowEnergy.Console.Watch\obj\Debug\Bluetooth.LowEnergy.Console.Watch.csproj.CopyComplete
+D:\Projects\SimpleBluetoothLibrary\Bluetooth.LowEnergy.Console.Watch\obj\Debug\Bluetooth.LowEnergy.Console.Watch.exe
+D:\Projects\SimpleBluetoothLibrary\Bluetooth.LowEnergy.Console.Watch\obj\Debug\Bluetooth.LowEnergy.Console.Watch.pdb
