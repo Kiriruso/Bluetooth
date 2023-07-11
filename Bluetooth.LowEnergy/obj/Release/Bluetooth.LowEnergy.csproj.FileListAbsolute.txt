@@ -1,0 +1,8 @@
+D:\Projects\SimpleBluetoothLibrary\Bluetooth.LowEnergy\bin\Release\Bluetooth.LowEnergy.dll
+D:\Projects\SimpleBluetoothLibrary\Bluetooth.LowEnergy\bin\Release\Bluetooth.LowEnergy.pdb
+D:\Projects\SimpleBluetoothLibrary\Bluetooth.LowEnergy\bin\Release\Windows.winmd
+D:\Projects\SimpleBluetoothLibrary\Bluetooth.LowEnergy\obj\Release\Bluetooth.LowEnergy.csproj.AssemblyReference.cache
+D:\Projects\SimpleBluetoothLibrary\Bluetooth.LowEnergy\obj\Release\Bluetooth.LowEnergy.csproj.CoreCompileInputs.cache
+D:\Projects\SimpleBluetoothLibrary\Bluetooth.LowEnergy\obj\Release\Bluetooth.LowEnergy.csproj.CopyComplete
+D:\Projects\SimpleBluetoothLibrary\Bluetooth.LowEnergy\obj\Release\Bluetooth.LowEnergy.dll
+D:\Projects\SimpleBluetoothLibrary\Bluetooth.LowEnergy\obj\Release\Bluetooth.LowEnergy.pdb
